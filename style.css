@@ -1,0 +1,50 @@
+.body{
+    background-color:white;
+}
+
+/* CSS for logo */
+.navbar img {
+  float: left; /* adjust alignment */
+  height: 40px; /* adjust size */
+  margin-right: 20px; /* adjust spacing */
+}
+/* CSS for hamburger icon */
+.hamburger {
+    display: none; /* Hide by default on larger screens */
+    float: right;
+    cursor: pointer;
+    padding: 15px;
+  }
+
+  /* CSS for responsive design */
+  @media screen and (max-width: 768px) {
+    .navbar a:not(:first-child) {
+      display: none; /* Hide navigation links on smaller screens */
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  /* CSS for active/hover state */
+  .active, .icon:hover {
+    background-color: #555;
+  }
+.container{
+    margin-right: 350px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    margin-left: 50px;
+    align-items: center;
+    
+}
+.img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Adjust spacing between image and text */
+    }
+
